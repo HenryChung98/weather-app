@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="card">
+    <div class="search">
+      <input type="text" placeholder="enter city name" spellcheck="false">
+      <button><img src="images/search.png"></button>
+    </div>
+    <div class="error">
+      <img src="images/error.png" alt="">
+      <p>WRONG CITY NAME!</p>
+    </div>
+    <div class="container">
+    <div class="weather">
+      <img src="images/rain.png" class="weatherIcon">
+      <h1 class="temp">0°c</h1>
+      <h2 class="city">city</h2>
+      <div class="details">
+        <div class="col">
+          <img src="images/humidity.png">
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+          <div class="col">
+            <img src="images/windsock.png">
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+            <div class="col">
+              <img src="images/dust.png" class="airIcon">
+              <div>
+                <p class="airQual">1</p>
+                <p>Air Quality</p>
+              </div>
+              </div>
+        </div>
+        </div>
+        <div class="information">
+          <h1 class="time">00:00:00</h1>
+          <div id="map"></div>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+</body>
+<link rel="stylesheet" href="style.css">
+<script type = "text/javascript" src="apiKey.js"></script>
+<script src="main.js"></script>
+</html>
